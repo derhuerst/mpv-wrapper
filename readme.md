@@ -18,8 +18,24 @@ npm install mpv-wrapper
 ## Usage
 
 ```js
-todo
+const createPlayer = require('mpv-wrapper')
+
+createPlayer((err, player) => {
+	if (err) return console.error(err)
+
+	player.observeProperty('filename', val => console.log('filename', val))
+	player.onIdle(() => player.quit())
+	player.loadfile('/path/to/audio.ogg')
+})
 ```
+
+Check out [a more detailed example](example/index.js).
+
+
+## Related
+
+- [`mpv-ipc`](https://github.com/Shizmob/mpv-ipc.js) – A simple, mostly dumb, client for `mpv`'s IPC interface. `mpv-wrapper` is based on this.
+- [`mplayer-wrapper`](https://github.com/derhuerst/mplayer-wrapper) – Let an `mplayer` instance play media.
 
 
 ## Contributing
