@@ -24,5 +24,6 @@
 		"node": ">=6"
 	},
 	"dependencies": {
+		"mpv-ipc": "^0.1.3"
 	}
 }
