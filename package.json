@@ -1,0 +1,28 @@
+{
+	"name": "mpv-wrapper",
+	"description": "Let an mpv instance play media.",
+	"version": "0.1.0",
+	"main": "index.js",
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"mpv",
+		"media",
+		"player",
+		"audio",
+		"video",
+		"play",
+		"headless"
+	],
+	"author": "Jannis R <mail@jannisr.de>",
+	"homepage": "https://github.com/derhuerst/mpv-wrapper",
+	"repository": "derhuerst/mpv-wrapper",
+	"bugs": "https://github.com/derhuerst/mpv-wrapper/issues",
+	"license": "ISC",
+	"engines": {
+		"node": ">=6"
+	},
+	"dependencies": {
+	}
+}
